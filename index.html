@@ -1,1 +1,90 @@
-<h1>Deploy automático funcionando!</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="/images/veplex-icon.png" rel="shortcut icon">
+    <title>Manual</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="sidebar-aberto">
+    <header>
+        <div class="header_logo">
+            <img class="veplex-logo" src="/images/veplex-logo.png">
+            <div class="header__toggle">
+                <i id="toggleTheme" class="bi bi-sun"></i>
+            </div>
+            <div class="toggle-btn-mobile">
+                <button class="toggle-btn" id="toggleSidebar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <div class="layout">
+        <aside class="sidebar-wrapper" id="sidebar">
+            <nav id="menu">
+                <ul class="menu">
+                    <li data-caminho="/Pages/home.html">Home</li>
+                    <li data-caminho="/Pages/cadastro_de_funcionario.html">Como cadastrar um novo promotor?</li>
+                    <li data-caminho="/Pages/cadastro_de_mix_ideal.html">Como criar um mix ideal?</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main id="main-content">
+            <div class="carousel">
+                <div class="carousel--track">
+                    <div class="carousel--row">
+                        <img class="item" src="/images/Logos/oniz-logo.png">
+                        <img class="item" src="/images/Logos/arilu-logo.png">
+                        <img class="item" src="/images/Logos/dismelo-logo.png">
+                        <img class="item" src="/images/Logos/distrimix-logo.png">
+                        <img class="item" src="/images/Logos/friolack-logo.png">
+                        <img class="item" src="/images/Logos/ibiapina-logo.png">
+                        <img class="item" src="/images/Logos/ofertao-logo.png">
+                        <img class="item" src="/images/Logos/polina-logo.png">
+                        <img class="item" src="/images/Logos/pulmer-logo.png">
+                        <img class="item" src="/images/Logos/rio-piranhas-logo-2.png">
+                        <img class="item" src="/images/Logos/tiscoski-logo.png">
+                        <img class="item" src="/images/Logos/trudel-logo.png">
+                    </div>
+                </div>
+                <h1 class="title-start">SEJA BEM VINDO!</h1>
+
+            </div>
+
+
+        </main>
+
+    </div>
+
+    <div class="container_voltar_inicio">
+        <button class="voltar_inicio_tela" id="voltar_inicio_tela"><i class="bi2 bi-arrow-up-circle-fill"></i></button>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="fecharTela()">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="/scripts/menu.js" type="module"></script>
+    <script src="/scripts/router.js" type="module"></script>
+    <script src="/scripts/animacoes.js" type="module"></script>
+
+</body>
+
+</html>
